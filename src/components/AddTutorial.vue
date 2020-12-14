@@ -54,6 +54,7 @@ export default class AddTutorial extends Vue {
       title: this.tutorial.title,
       description: this.tutorial.description,
     };
+    console.log(data);
 
     TutorialDataService.create(data)
       .then((response) => {
